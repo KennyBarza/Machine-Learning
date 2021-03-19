@@ -1,0 +1,1 @@
+In this section, we will be showing how to drop columns that have low variance. These columns might be useless as the only contain very few values. We will also be showing how to drop rows.

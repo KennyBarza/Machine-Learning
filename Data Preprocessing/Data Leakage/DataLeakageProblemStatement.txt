@@ -1,0 +1,12 @@
+Data Leakage.
+
+Data leakage is a common problem for beginners, that goes under the radar. Data Leakage occurs when we the training set and the test set have been tied down indirectly thanks to some
+prior calculation using the whole dataset befor splitting. A good example is when we normalize the data. If this is done on the data before splitting. This requires us to calculate the maximum and the minimum of the whole dataset. After splitting the data, the training and the test set will know some things about each other, that is the maximum an the minimum which are global. They were leaked to them!
+To solve this problem, data preparation will be done after the split of the data.
+
+Also, we will be doing a simple example of how cross validation can be done without a leakage... using piple of course.
+
+
+Note: I found this code via this link:
+https://machinelearningmastery.com/data-preparation-without-data-leakage/
+I am just doing these to learn by myself about machine learning.
